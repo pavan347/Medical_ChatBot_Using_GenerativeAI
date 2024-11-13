@@ -4,7 +4,7 @@
 
 ![Home Image](preview/Home-Top.png)
 
-![Home Image](preview/Home-Top.png)
+![Home Image](preview/Home-Bottom.png)
 
 # About
 
@@ -23,4 +23,4 @@
 ![Health Care Chatbot](preview/Chatbot.png)
 
 # Preview Video of the Health Care Chatbot made using Generative AI
-![Preview Video](preview/HealthCare%20Chat%20Bot.mp4)
+[Preview Video](preview/HealthCareChatBot.mp4)
