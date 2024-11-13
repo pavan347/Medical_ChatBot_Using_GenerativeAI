@@ -1,0 +1,1 @@
+## This is a Medical Chat Bot made using Generative AI and it was trained on the book The GALE ENCYCLOPEDIA of MEDICINE. For Front End i have used Flask a python Framework and for database I have used pinecone vector BD and used the LLM for processing the querry and the Ranked results from the Knowledge Base. This also inludes some basic utilites like BMI calculator.

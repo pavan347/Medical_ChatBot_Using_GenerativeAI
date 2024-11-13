@@ -1,0 +1,71 @@
+{% extends "base.html" %} {% block content %}
+<div class="container mt-5">
+
+    <!--  BMI Calculator -->
+    <section class="text-center mb-5">
+        <h1 class="display-4">BMI Calculator</h1>
+        <p class="lead text-muted">
+            Calculate your Body Mass Index (BMI) using the calculator below.
+        </p>
+    </section>
+
+    <section class="row align-items-center mb-5">
+       
+        <div class="col-md-6">
+            <h2>What is BMI?</h2>
+            <p class="text-muted">
+                Body Mass Index (BMI) is a measure of body fat based on your height and weight. It is used to
+                categorize individuals into different weight categories, such as underweight, normal weight,
+                overweight, and obese.
+            </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group
+                -item">
+                    Simple calculation based on height and weight.
+                </li>
+                <li class="list-group
+                -item">Provides an estimate of body fat percentage.</li>
+                <li class="list-group
+                -item">Used to assess health risks associated with weight.</li>
+            </ul>
+        </div>
+        <div class="col-md-5">
+            <img src="/images/BMI.avif" class="img-fluid rounded shadow " alt="BMI Calculator Illustration" />
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <div class="card border-success-subtle">
+            <div class="card-header bg-white text-success">
+                <h3 class="text-center">BMI Calculator</h3>
+            </div>
+            <div class="card-body">
+                <form id="bmiForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="weight" class="form-label">Weight (kg)</label>
+                        <input type="number" id="weight" class="form-control border-success-subtle" required>
+                        <div class="invalid-feedback">
+                            Please enter your weight.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="height" class="form-label">Height (cm)</label>
+                        <input type="number" id="height" class="form-control border-success-subtle" required>
+                        <div class="invalid-feedback">
+                            Please enter your height.
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-outline-success" onclick="calculateBMI()">Calculate BMI</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer bg-white text-center">
+                <h4 id="bmiResult" class="text-success"></h4>
+                <p id="bmiCategory" class="text-muted"></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
