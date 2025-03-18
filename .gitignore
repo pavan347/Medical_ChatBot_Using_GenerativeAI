@@ -8,6 +8,18 @@ __pycache__/
 
 SETUP.md
 
+# project files
+Data
+modules
+research
+src
+static
+templates
+app.py
+setup.py
+store_index.py
+template.py
+
 # Distribution / packaging
 .Python
 build/
